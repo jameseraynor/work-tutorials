@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    definitions of all the beans and dependencies -->
+        <bean id="dev" class="org.example.spring.only.Dev" autowire="byType">
+<!--            commented our possible setup options-->
+<!--            <constructor-arg ref="laptop-bean" name="laptop"/>-->
+<!--            <property name="laptop" ref="laptop-bean"/>-->
+        </bean>
+<!--    explicit use of primary to indicate which bean to use in case of many possibilities-->
+        <bean id="laptop-bean" class="org.example.spring.only.Laptop" primary="true"/>
+        <bean id="desktop-bean" class="org.example.spring.only.Desktop"/>
+</beans>
