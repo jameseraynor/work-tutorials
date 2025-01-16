@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: spring-cloud-dependencies
+
+greeting:
+  hello: hello world from TEST yaml
+
+my:
+  list: one,two,three
+
+app:
+  name: myApp
+  description: the app, ${app.name}, is used mainly to say hello
+
+db:
+  connection: connection-String
+  host: 127.0.0.1
+  port: 1200
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

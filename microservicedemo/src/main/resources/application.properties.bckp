@@ -1,0 +1,13 @@
+spring.application.name: microservicedemo
+
+greeting.hello: hello world from properties
+my.list: one,two,three
+app.name: myApp
+app.description: the app, ${app.name}, is used mainly to say hello
+
+db.Values: {username: 'foo', password: '12345'}
+db.user: {username: 'foo', password: '12345'}
+db.host: 127.0.0.1
+db.port: 1200
+
+management.endpoints.web.exposure.include: *
